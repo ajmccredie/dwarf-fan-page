@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}"
+        type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>Hello Flask</title>
 </head>
 
@@ -41,7 +43,8 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://pre00.deviantart.net/9ae0/th/pre/f/2013/275/8/f/the_hobbit__thorin_and_company_by_art_calavera-d5nay7b.png')">
+    <header class="masthead"
+        style="background-image: url('https://pre00.deviantart.net/9ae0/th/pre/f/2013/275/8/f/the_hobbit__thorin_and_company_by_art_calavera-d5nay7b.png')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -96,7 +99,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+                    <p class="copyright text-muted">Copyright &copy; Your Website <span id="copyright"></span></p>
                 </div>
             </div>
         </div>
